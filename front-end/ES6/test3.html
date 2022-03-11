@@ -1,0 +1,39 @@
+
+<!-- DOM Level2 Event Handler . Best Practice. -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Events</title>
+    </head>
+
+    <body>
+        <h2>Understanding Events</h2>
+
+        <button id="btn" >Click Me!</button>
+
+        <script>
+
+            // function display(){
+            //     alert('It was clicked');
+            // }
+
+            let btn = document.querySelector("#btn")
+
+            // btn.onclick = function(){
+            //     alert('It was clicked');
+            // }
+
+            btn.addEventListener('click', function(event){
+                alert("Button is clicked")
+            })
+
+            btn.addEventListener('click', function(event){
+                alert("Button was clicked")
+            })
+
+        </script>
+    </body>
+</html>

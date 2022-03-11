@@ -23,14 +23,9 @@
         {title: "React"}
     ]
 
-    var count = courses.length;
-    
-
-    var coursesDummy = [...courses];
-
 
     // Adding markup to the courses array.
-    courses.forEach((course) => {
+    document.getElementById("cards").innerHTML = courses.map((course)=> {
 
         var cardTemplate = `
     <div class="card" style="width: 18rem;">
@@ -42,17 +37,8 @@
         </div>
       </div>
     `
-    courses.push(cardTemplate);
+        return cardTemplate;
     })
-
-
-    // Deleting the initial courses from the array;
-    for(let i=0; i<coursesDummy.length; i++){
-        courses[i] = null;
-    }
-
-    console.log(courses)
-    document.getElementById('cards').innerHTML = courses;
 
 
     // forEach function to display a list of elements.

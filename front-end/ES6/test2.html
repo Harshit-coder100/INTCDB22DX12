@@ -1,0 +1,28 @@
+<!-- Example of element's event handler property. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Events</title>
+    </head>
+
+    <body>
+        <h2>Understanding Events</h2>
+
+        <button id="btn" >Click Me!</button>
+
+        <script>
+
+            // function display(){
+            //     alert('It was clicked');
+            // }
+
+            let btn = document.querySelector("#btn")
+
+            btn.onclick = function(){
+                alert('It was clicked');
+            }
+
+        </script>
+    </body>
+</html>
