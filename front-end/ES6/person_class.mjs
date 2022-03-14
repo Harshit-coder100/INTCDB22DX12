@@ -1,25 +1,14 @@
-export default class Person{
+export class Person{
 
     constructor(name){
-        this.name = name;
-    }
-    
-    walk(){
-        console.log("walk")
+        this.firstName = name;
     }
 
-    talk(){
-        console.log("walk")
+    walk(){
+        console.log("Walk")
     }
 }
 
+// const person = new Person("Mosh");
 
-export  const courses = [
-    {title: "Angular"},
-    {title: "React"},
-]
-
-// const person  = new Person("Rahul");
-
-// console.log(person.name)
-
+// console.log(person);

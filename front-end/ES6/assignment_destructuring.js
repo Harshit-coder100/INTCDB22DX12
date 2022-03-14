@@ -4,13 +4,17 @@ const address = {
     country: "India"
 }
 
-// const street = address.street;
-// const city = address.city;
-// const country =address.country;
+// const STREET = address.street;
+// const CITY = address.city;
+// const COUNTRY = address.country;
+
+// const {street} = address;
 
 
 // Using alias
 const {street: st} = address;
+
+
 
 console.log(st)
 
