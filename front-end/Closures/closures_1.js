@@ -20,7 +20,6 @@
 
 
 
-
 // Example-2:-
 
 // function greeting() {
