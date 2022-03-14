@@ -9,4 +9,3 @@
 // let result = /t$/.test(str)
 
 // console.log(result)
-
